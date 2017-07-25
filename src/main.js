@@ -5,6 +5,7 @@ import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import fastclick from 'fastclick' // 解决300毫秒延迟问题
 import VueLazyLoad from 'vue-lazyload'
 
@@ -21,6 +22,7 @@ Vue.use(VueLazyLoad, {
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
